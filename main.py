@@ -26,6 +26,7 @@ class Ship():
         print(f"Configuration du bâteau: {self.name}: ")
         for part, material in self.__parts.items():
             print(f"{part}: {material}")
+        return self.__parts
         
     def replace_part(self, part_name, new_material):
         if part_name in self.__parts:
