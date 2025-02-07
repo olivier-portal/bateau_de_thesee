@@ -42,14 +42,15 @@ class RacingShip(Ship):
         self.max_speed = max_speed
         
     def display_speed(self):
-        print(f"{self.display_state()}\nVitesse maximale: {self.max_speed} noeuds")
+        self.display_state()
+        print(f"Vitesse maximale: {self.max_speed} noeuds")
         
     
-# bateau = Ship("Thésée", ["proue", "mât"], "bois")
-# bateau.display_state()
+bateau = Ship("Thésée", ["proue", "mât"], "bois")
+bateau.display_state()
 
-# bateau.replace_part("proue", "bois débène")
-# bateau.display_state()
+bateau.replace_part("proue", "bois débène")
+bateau.display_state()
 
 bateau2 = RacingShip("Thésée", ["proue", "mât"], "bois", 80)
 bateau2.display_speed()
